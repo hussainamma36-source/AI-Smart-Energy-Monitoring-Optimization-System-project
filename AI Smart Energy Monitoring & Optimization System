@@ -1,0 +1,785 @@
+Build a complete, modern, professional web application titled:
+
+# AI Smart Energy Monitoring & Optimization System
+
+This is a B.Tech ECE academic project that combines IoT, Artificial Intelligence, energy monitoring, data analytics, and a web dashboard.
+
+## 1. MAIN OBJECTIVE
+
+Develop a smart campus energy monitoring platform that monitors electricity consumption in classrooms, laboratories, and other college facilities.
+
+The system should analyze energy data using AI to:
+
+* Detect abnormal energy consumption
+* Identify possible electricity wastage
+* Predict future energy consumption
+* Estimate electricity costs
+* Provide AI-powered energy-saving recommendations
+* Compare energy usage between rooms/labs
+* Generate daily, weekly, and monthly reports
+* Provide alerts when unusual consumption is detected
+
+The application should look like a real-world smart-campus product, not a basic student CRUD project.
+
+---
+
+# 2. DESIGN & UI
+
+Create a clean, modern, professional dashboard.
+
+Use:
+
+* Responsive design
+* Desktop and mobile compatibility
+* Modern cards
+* Interactive charts
+* Tables
+* Icons
+* Clear navigation
+* Professional typography
+* Light theme with a clean technology/energy aesthetic
+* Green/blue accent colors suitable for an energy-management application
+* Smooth hover effects and subtle animations
+* Good spacing and visual hierarchy
+
+The application must look suitable for a college hackathon/project demonstration.
+
+---
+
+# 3. LOGIN / AUTHENTICATION
+
+Create authentication pages:
+
+### Login
+
+Fields:
+
+* Email
+* Password
+
+### Registration
+
+Fields:
+
+* Full Name
+* Email
+* Password
+* Role
+
+Roles:
+
+* Admin
+* Faculty
+* Student
+
+After login, redirect the user to the appropriate dashboard.
+
+---
+
+# 4. MAIN DASHBOARD
+
+Create a dashboard titled:
+
+"AI Smart Energy Monitoring"
+
+At the top display summary cards:
+
+### Total Energy Today
+
+Example:
+428.6 kWh
+
+### Current Power Usage
+
+Example:
+32.8 kW
+
+### Estimated Cost Today
+
+Example:
+₹3,240
+
+### Energy Efficiency
+
+Example:
+82%
+
+### Potential Energy Saving
+
+Example:
+18%
+
+Use realistic sample data.
+
+Below the cards create:
+
+## Real-Time Energy Consumption Chart
+
+Show:
+
+* Power consumption
+* Energy consumption
+* Time
+
+Use an interactive line chart.
+
+Provide filters:
+
+* Today
+* Yesterday
+* Last 7 Days
+* Last 30 Days
+
+---
+
+# 5. ROOM / LAB MONITORING
+
+Create a page called:
+
+"Rooms & Labs"
+
+Display rooms such as:
+
+* ECE Lab 1
+* ECE Lab 2
+* Digital Electronics Lab
+* Communication Lab
+* Embedded Systems Lab
+* Computer Lab
+* Classroom 101
+* Classroom 102
+
+Each room should display:
+
+* Voltage
+* Current
+* Power
+* Energy consumed
+* Estimated cost
+* Energy efficiency score
+* Current status
+
+Statuses:
+
+🟢 Normal
+🟠 Warning
+🔴 High Consumption
+
+Example:
+
+ECE Lab 2
+
+Power:
+8.4 kW
+
+Today's Energy:
+64.2 kWh
+
+Efficiency:
+61%
+
+Status:
+High Consumption
+
+---
+
+# 6. AI ENERGY WASTE DETECTION
+
+Create a dedicated page:
+
+"AI Energy Analysis"
+
+The AI should analyze historical and real-time energy data.
+
+Detect:
+
+* Unusual energy spikes
+* Excessive consumption
+* Equipment running after working hours
+* Abnormal room consumption
+* Sudden changes in power usage
+* Repeated high-consumption patterns
+
+Example AI alert:
+
+⚠️ HIGH ENERGY CONSUMPTION
+
+ECE Lab 2 is consuming 28% more energy than its normal pattern.
+
+Possible reason:
+Multiple electronic devices may be running after scheduled laboratory hours.
+
+Recommended action:
+Check equipment and switch off unused devices.
+
+Create multiple realistic AI-generated insights.
+
+---
+
+# 7. AI RECOMMENDATIONS
+
+Create a page:
+
+"Smart Recommendations"
+
+The AI should provide actionable recommendations.
+
+Examples:
+
+💡 Recommendation 1
+Turn off unused laboratory equipment after practical sessions.
+
+Potential saving:
+12.4 kWh/day
+
+💰 Estimated monthly saving:
+₹2,850
+
+---
+
+💡 Recommendation 2
+Reduce unnecessary lighting in low-occupancy classrooms.
+
+Potential saving:
+8.2 kWh/day
+
+---
+
+💡 Recommendation 3
+Schedule high-power laboratory equipment during optimized operating hours.
+
+Show:
+
+* Recommendation
+* Reason
+* Estimated energy saving
+* Estimated cost saving
+* Priority
+
+Use priority levels:
+
+High
+Medium
+Low
+
+---
+
+# 8. ENERGY PREDICTION
+
+Create a page:
+
+"Energy Forecast"
+
+Use historical energy data to predict future consumption.
+
+Display:
+
+Today's Consumption:
+428.6 kWh
+
+Tomorrow's Predicted Consumption:
+441.2 kWh
+
+Next 7 Days:
+Interactive forecast chart.
+
+Show:
+
+* Predicted consumption
+* Expected peak hours
+* Expected minimum usage
+* Estimated electricity cost
+
+Also provide an AI explanation:
+
+"Energy consumption is expected to increase tomorrow because laboratory usage is historically higher between 10 AM and 4 PM."
+
+If a real ML model is not available, implement a realistic prediction algorithm using historical data and clearly structure the application so a real ML model/API can be integrated later.
+
+---
+
+# 9. ENERGY EFFICIENCY SCORE
+
+Create an "Energy Score" for every room.
+
+Score from 0 to 100.
+
+Example:
+
+ECE Lab 1
+92/100
+Excellent
+
+ECE Lab 2
+61/100
+Needs Attention
+
+Communication Lab
+84/100
+Good
+
+Digital Lab
+43/100
+High Wastage
+
+Calculate the score using factors such as:
+
+* Energy consumption
+* Occupancy
+* Operating hours
+* Historical average
+* Abnormal consumption
+* Equipment usage
+
+---
+
+# 10. ENERGY COST CALCULATOR
+
+Create a page:
+
+"Cost Analysis"
+
+Display:
+
+* Daily electricity cost
+* Weekly electricity cost
+* Monthly electricity cost
+* Cost by room
+* Cost by laboratory
+* Cost by equipment category
+
+Allow admin to configure:
+
+Electricity tariff:
+₹8 per kWh
+
+Allow the tariff to be changed.
+
+Show:
+
+Total Consumption:
+2,840 kWh
+
+Estimated Cost:
+₹22,720
+
+Potential Saving:
+₹4,540
+
+---
+
+# 11. ALERT SYSTEM
+
+Create an alerts page.
+
+Types of alerts:
+
+🔴 Critical
+🟠 Warning
+🔵 Information
+
+Examples:
+
+"Power consumption exceeded normal threshold in ECE Lab 2."
+
+"Unusual energy spike detected at 2:35 PM."
+
+"Equipment appears to be running outside scheduled hours."
+
+Allow users to:
+
+* View alerts
+* Mark as resolved
+* Filter by severity
+* Filter by room
+* Filter by date
+
+---
+
+# 12. DEVICE / EQUIPMENT MONITORING
+
+Create a page:
+
+"Equipment"
+
+Include sample equipment:
+
+* Oscilloscope
+* Function Generator
+* DC Power Supply
+* Soldering Station
+* Signal Generator
+* Computer
+* Air Conditioner
+* LED Lighting
+* Fans
+
+For each equipment item display:
+
+* Equipment name
+* Room
+* Power rating
+* Current status
+* Operating hours
+* Energy consumed
+* Last active time
+
+Statuses:
+
+ON
+OFF
+IDLE
+WARNING
+
+---
+
+# 13. IoT SENSOR DATA
+
+Create a page:
+
+"IoT Monitoring"
+
+Display simulated sensor data:
+
+* Voltage
+* Current
+* Power
+* Energy
+* Temperature
+* Power factor
+
+Create real-time-looking updating values using simulated data.
+
+Use sample ESP32/IoT sensor architecture.
+
+Show:
+
+ESP32
+↓
+Energy Sensor
+↓
+Cloud/API
+↓
+AI Analysis
+↓
+Web Dashboard
+
+Clearly display this architecture in the UI.
+
+The application should be structured so real ESP32 sensor data can later replace the simulated data through an API.
+
+---
+
+# 14. ANALYTICS PAGE
+
+Create:
+
+"Energy Analytics"
+
+Include:
+
+### Consumption by Room
+
+Bar chart
+
+### Consumption by Day
+
+Line chart
+
+### Peak Usage Hours
+
+Chart
+
+### Energy Cost Trend
+
+Chart
+
+### Energy Efficiency Comparison
+
+Chart
+
+### Monthly Consumption
+
+Chart
+
+Allow filters:
+
+* Room
+* Date
+* Week
+* Month
+
+---
+
+# 15. REPORT GENERATION
+
+Create a page:
+
+"Reports"
+
+Allow users to generate:
+
+* Daily Energy Report
+* Weekly Energy Report
+* Monthly Energy Report
+* Room-wise Report
+* AI Recommendation Report
+
+Each report should contain:
+
+* Total energy consumption
+* Average power
+* Peak power
+* Estimated cost
+* Energy wastage
+* Efficiency score
+* AI recommendations
+* Potential savings
+
+Add buttons:
+
+"Generate Report"
+
+"Download PDF"
+
+"Export CSV"
+
+---
+
+# 16. ADMIN DASHBOARD
+
+Create an admin section.
+
+Admin can:
+
+* Add rooms
+* Remove rooms
+* Add equipment
+* Update equipment
+* Set energy thresholds
+* Set electricity tariff
+* View users
+* View sensor data
+* Configure working hours
+* View alerts
+* View reports
+
+---
+
+# 17. AI CHAT ASSISTANT
+
+Add a floating AI assistant called:
+
+"EnergyAI"
+
+Users can ask questions such as:
+
+"Which lab consumed the most energy today?"
+
+"How can we reduce energy consumption?"
+
+"Why is ECE Lab 2 showing high consumption?"
+
+"What is our estimated electricity cost this month?"
+
+"Which room has the highest energy wastage?"
+
+The AI should answer using the application's available energy data.
+
+Example:
+
+User:
+"Which lab has the highest wastage?"
+
+EnergyAI:
+"ECE Lab 2 has the highest estimated wastage at 18.6 kWh today, which is approximately 28% above its normal consumption."
+
+---
+
+# 18. DATABASE
+
+Create database structures for:
+
+Users
+Rooms
+Equipment
+SensorReadings
+EnergyConsumption
+Alerts
+Recommendations
+Reports
+EnergyPredictions
+
+Relationships should be properly designed.
+
+Example SensorReading fields:
+
+* id
+* room_id
+* voltage
+* current
+* power
+* energy
+* temperature
+* power_factor
+* timestamp
+
+---
+
+# 19. SAMPLE DATA
+
+Populate the application with realistic sample data so that the dashboard looks complete immediately after launching.
+
+Use multiple rooms and several days/weeks of energy readings.
+
+Do NOT leave the dashboard empty.
+
+---
+
+# 20. GITHUB-READY PROJECT
+
+Structure the project cleanly so it can be exported/pushed to GitHub.
+
+Project name:
+
+AI-Smart-Energy-Monitoring-and-Optimization-System
+
+Create a professional README containing:
+
+# AI Smart Energy Monitoring & Optimization System
+
+## Overview
+
+## Problem Statement
+
+## Proposed Solution
+
+## Features
+
+## AI Features
+
+## IoT Architecture
+
+## Technology Stack
+
+## System Architecture
+
+## Database Structure
+
+## Installation
+
+## Usage
+
+## Future Scope
+
+## Team Members
+
+## Screenshots
+
+## License
+
+Include a clear project architecture diagram in the documentation.
+
+---
+
+# 21. TECHNOLOGY STACK
+
+Use a modern stack suitable for Base44.
+
+Frontend:
+
+* React
+* Modern responsive UI
+
+Backend:
+
+* Base44 backend/services
+
+Database:
+
+* Base44 database
+
+AI:
+
+* AI-powered analysis/recommendation layer
+
+Charts:
+
+* Interactive charts
+
+Authentication:
+
+* Secure authentication
+
+Make the architecture modular so external IoT devices and APIs can be connected later.
+
+---
+
+# 22. LANDING PAGE
+
+Create a professional landing page before login.
+
+Hero section:
+
+"AI Smart Energy Monitoring & Optimization"
+
+Subtitle:
+
+"Monitor. Analyze. Predict. Optimize."
+
+Description:
+
+"An intelligent campus energy management platform that uses IoT data and AI analytics to detect energy wastage, predict consumption, and recommend smarter energy-saving actions."
+
+Buttons:
+
+"Get Started"
+
+"View Dashboard"
+
+Add sections:
+
+### Why Smart Energy Monitoring?
+
+### AI-Powered Insights
+
+### Real-Time IoT Monitoring
+
+### Energy Prediction
+
+### Smart Recommendations
+
+### Cost Optimization
+
+### Smart Campus Vision
+
+---
+
+# 23. IMPORTANT REQUIREMENTS
+
+The final application must:
+
+* Be fully responsive
+* Have working navigation
+* Have realistic sample data
+* Have interactive charts
+* Have functional filters
+* Have functional authentication
+* Have a professional dashboard
+* Have AI analysis screens
+* Have simulated IoT sensor data
+* Have alerts
+* Have energy predictions
+* Have cost calculations
+* Have reports
+* Have an AI chatbot
+* Have a clean database structure
+* Be easy to demonstrate during a B.Tech project presentation
+
+Do not make it look like a generic admin dashboard.
+
+The UI should clearly communicate:
+
+ECE + IoT + AI + Energy Management + Smart Campus.
+
+Prioritize a polished, production-style interface and functional user experience over unnecessary complexity.
